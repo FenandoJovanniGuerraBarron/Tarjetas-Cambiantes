@@ -27,6 +27,13 @@ h1 {
 .card__quote{
     margin-bottom: 10px;
     font-size: 18px;
+    display: flex;
+    gap: 10px;
+}
+
+.bi-quote{
+width: 80px;
+height: 80px;
 }
 
 .card__author{
@@ -50,3 +57,4 @@ button:hover{
     transform: scale(1.05);
     transition: filter 100ms ease,transform 100ms ease;
 }
+
