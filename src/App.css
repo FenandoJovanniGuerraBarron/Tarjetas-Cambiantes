@@ -22,6 +22,9 @@ h1 {
     border-radius: 10px;
     box-shadow: 3px 3px 10px #0009;
     max-width: 400px;
+    display: grid;
+    grid-template-rows: 3fr 1fr 1fr;
+    grid-template-columns: 1fr 6fr;
 }
 
 .card__quote{
@@ -32,13 +35,17 @@ h1 {
 }
 
 .bi-quote{
-width: 80px;
-height: 80px;
+width: 60px;
+height: 60px;
+grid-row: 1/2;
+grid-column: 1/2;
 }
 
 .card__author{
     margin-left: auto;
     width: max-content;
+    grid-row: 2/3;
+    grid-column: 2/3;
 }
 
 button{
@@ -51,6 +58,8 @@ button{
     border-radius: 50%;
     cursor: pointer;
     transition: filter 100ms ease,transform 100ms ease;
+    grid-row: 3/4;
+    grid-column: 2/3;
 }
 button:hover{
     filter: brightness(1.2);
